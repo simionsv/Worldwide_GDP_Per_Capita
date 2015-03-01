@@ -1,5 +1,5 @@
 ### Worldwide_GDP_Per_Capita
-This script evaluate from tree diferentes address the worldwide GDP per capita
+This script evaluate GDP Per capita based on the files below
 
 
 
