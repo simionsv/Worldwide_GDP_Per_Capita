@@ -11,7 +11,7 @@ URL<- "http://data.okfn.org/data/core/population/r/population.csv"
 download.file(URL, destfile = "./data3.csv")
 
 library(dplyr)
-abs <- read.csv("C:/Users/Sergio Simioni/Desktop/Data_Science/getting_data/data1.csv", colClasses="character")
+abs<- read.csv("C:/Users/Sergio Simioni/Desktop/Data_Science/getting_data/data1.csv", colClasses="character")
 abs<- select(abs, "country"=X, "gdp"=Gross.domestic.product.2012,"name"=X.2, "value"=X.3  )
 abs<- abs[-(1:4),]
 abs<- transform( abs, gdp=as.numeric(gdp))
@@ -21,7 +21,7 @@ abs<- arrange(abs, gdp)
 abs<- abs[-(191:326), ]
 str(abs)
 
-abc <- read.csv("C:/Users/Sergio Simioni/Desktop/Data_Science/getting_data/data2.csv", colClasses="character")
+abc<- read.csv("C:/Users/Sergio Simioni/Desktop/Data_Science/getting_data/data2.csv", colClasses="character")
 abc<- select(abc, "country"=CountryCode,"Income"=Income.Group, "region"=Region  )
 
 
