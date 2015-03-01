@@ -1,5 +1,5 @@
 
-setwd("C:/Users/Sergio Simioni/Desktop/Data_Science/getting_data/")
+
 
 URL<- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FGDP.csv"
 download.file(URL, destfile = "./data1.csv")
